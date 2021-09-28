@@ -1,14 +1,20 @@
-Instructions
-===============
+anaconda-template : docker + anaconda + python
+===============================================
 
-To build the image locally, please conduct the following steps.
+This is the source code for the public docker image published on the docker hub:
 
-0. Build::
+- https://hub.docker.com/r/pyt3r/anaconda-template
+
+
+The published image may be installed directly from docker hub as follows::
+
+    $ docker pull pyt3r/anaconda-template
+
+
+
+Alternately, to build and test the image locally, the following commands may be used::
 
     $ make build
-
-
-1. Test::
 
     $ make test
 
