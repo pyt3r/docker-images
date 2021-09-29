@@ -4,6 +4,7 @@ USERNAME=pyt3r
 
 DOCKER_TEST_PATH=/test.sh
 
+LATEST=${USERNAME}/${NAME}
 IMAGE=${USERNAME}/${NAME}:${VERSION}
 CONTAINER=${USERNAME}-${NAME}-${VERSION}-container
 
@@ -41,3 +42,10 @@ remove-image:
 
 push:
 	docker push ${IMAGE}
+
+
+build-latest:
+	docker build --tag ${LATEST} .
+
+push-latest:
+	docker push ${LATEST}
