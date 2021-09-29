@@ -34,5 +34,3 @@ Alternately, to build and test the image locally, the following commands may be 
 
     $ make build
 
-    $ make test
-
