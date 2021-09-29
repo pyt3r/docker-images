@@ -26,7 +26,7 @@ Installation
 
 The published image may be installed directly from docker hub as follows::
 
-    $ docker pull pyt3r/base
+    $ docker pull pyt3r/base:0.0
 
 
 

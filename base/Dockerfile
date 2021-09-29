@@ -6,4 +6,3 @@ RUN /scripts/base.sh
 
 ENTRYPOINT ["/usr/local/bin/tini", "--"]
 
-VOLUME ["/tmp"]

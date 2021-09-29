@@ -1,6 +1,11 @@
-IMAGE=pyt3r/anaconda-template
-CONTAINER=${IMAGE}-container
+NAME=anaconda-template
+VERSION=0.0
+USERNAME=pyt3r
+
 DOCKER_TEST_PATH=/test.sh
+
+IMAGE=${USERNAME}/${NAME}:${VERSION}
+CONTAINER=${USERNAME}-${NAME}-${VERSION}-container
 
 
 build:
@@ -33,3 +38,6 @@ remove-all:
 
 remove-image:
 	docker image remove ${IMAGE}
+
+push:
+	docker push ${IMAGE}

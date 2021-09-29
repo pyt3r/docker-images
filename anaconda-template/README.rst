@@ -28,7 +28,7 @@ Installation
 
 The published image may be installed directly from docker hub as follows::
 
-    $ docker pull pyt3r/anaconda-template
+    $ docker pull pyt3r/anaconda-template:0.0
 
 
 
