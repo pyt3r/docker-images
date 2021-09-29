@@ -2,6 +2,7 @@ NAME=base
 VERSION=0.0
 USERNAME=pyt3r
 
+LATEST=${USERNAME}/${NAME}
 IMAGE=${USERNAME}/${NAME}:${VERSION}
 CONTAINER=${USERNAME}-${NAME}-${VERSION}-container
 
@@ -33,3 +34,10 @@ remove-image:
 
 push:
 	docker push ${IMAGE}
+
+
+build-latest:
+	docker build --tag ${LATEST} .
+
+push-latest:
+	docker push ${LATEST}
