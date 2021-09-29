@@ -1,8 +1,7 @@
-FROM krallin/ubuntu-tini:16.04
+FROM pyt3r/base:0.0
 
 ADD scripts /scripts
 RUN chmod -R +x /scripts
-RUN /scripts/base.sh
 RUN /scripts/miniconda.sh
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8

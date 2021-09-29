@@ -1,8 +1,6 @@
-NAME=anaconda-template
+NAME=base
 VERSION=0.0
 USERNAME=pyt3r
-
-DOCKER_TEST_PATH=/test.sh
 
 IMAGE=${USERNAME}/${NAME}:${VERSION}
 CONTAINER=${USERNAME}-${NAME}-${VERSION}-container
@@ -10,12 +8,6 @@ CONTAINER=${USERNAME}-${NAME}-${VERSION}-container
 
 build:
 	docker build --tag ${IMAGE} .
-
-test:
-	docker run \
- 		--name ${CONTAINER} \
- 		-it ${IMAGE} /bin/bash \
- 		${DOCKER_TEST_PATH}
 
 run-bash:
 	docker run \

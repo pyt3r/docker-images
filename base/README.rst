@@ -1,4 +1,4 @@
-anaconda-template : docker + anaconda + python
+base : ubuntu docker image
 ===============================================
 
 Features
@@ -6,13 +6,11 @@ Features
 
 This is the source code for the public docker image published on the docker hub:
 
-* https://hub.docker.com/r/pyt3r/anaconda-template
+* https://hub.docker.com/r/pyt3r/base
 
 
-The image comes equipped with miniconda along with the following template python package
-and serves as a boilerplate for constructing larger docker images with many python dependencies:
-
-* https://github.com/pyt3r/template-package
+The image serves as the base image in the construction of the larger docker images
+in this repository.
 
 
 Prerequisites
@@ -28,7 +26,7 @@ Installation
 
 The published image may be installed directly from docker hub as follows::
 
-    $ docker pull pyt3r/anaconda-template:0.0
+    $ docker pull pyt3r/base:0.0
 
 
 
